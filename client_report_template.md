@@ -1,8 +1,8 @@
 # Client Meetings Report
 
-## Agenda (DATE)
- * Item 1
- * Item 2
+## Agenda 8/21/2025
+ * Communication adn Repository
+ * 
  * Item 3
 
 ## Minutes (DATE)
