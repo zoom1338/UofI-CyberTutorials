@@ -1,6 +1,6 @@
 # Tools Mobile app security testing with MobSF (Static), Frida/Burp Suit (Dynamic)
 ## STATIC:
-### MobSF- 
+### MobSF- comes with iOS and Android test files
 #### Sources:
  * Docker Download for MC,Windows, Linux - https://docs.docker.com/get-started/get-docker/
  * Web scanner- https://mobsf.live/
