@@ -23,3 +23,12 @@ Deliverables for Sprint 1- CATME assignemts, Draft report, Checklist, Demo Video
 goals for week: continue documenting researching, learning tools ie aircrack, research questions
 * Isabella's Progress on Mobile App Security- 
 goals for week: testing MobSF, Complete notes on MobSF, Frida and Burp Suite. Update tutorial documentation. Define learing Objectives for Tutorial. Find App files for android and iOS.
+
+# Agenda 9/2/2025
+    * Updates from Previous week progress
+    *
+# Minutes
+    Current progess was discusses, collboration with Cyber Security Club for hardware requirements
+    * Dara's goal for week: draft tutorial, update word list, creat issues on github
+    * Isabella's goals: finish static tutorial begin dynamic analysis
+    * work on project report draft and sprint 1 deliverables
