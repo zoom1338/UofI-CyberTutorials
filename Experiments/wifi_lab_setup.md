@@ -1,0 +1,81 @@
+# Wi-Fi Lab Setup for Packet Analysis
+
+This document outlines the hardware and software for setting up a Wi-Fi packet capture lab using Kali Linux.
+
+## Hardware Shortlist
+
+A USB Wi-Fi adapter that supports both monitor mode and packet injection is required. Here are some recommended chipsets and models:
+
+*   **Atheros AR9271:**
+    *   TP-Link TL-WN722N (Version 1 only)
+    *   Alfa AWUS036NHA
+*   **Ralink RT3070:**
+    *   Alfa AWUS036NH
+*   **Realtek RTL8812AU:**
+    *   Alfa AWUS036ACH
+    *   TP-Link Archer T4U V3
+
+*Note: Always verify the adapter version and chipset before purchasing, as manufacturers can change them without notice.*
+
+## Live-Capture Commands
+
+The following commands will be used for capturing and analyzing Wi-Fi traffic.
+
+### 1. Enable Monitor Mode
+
+First, identify your wireless interface (`wlan0`, `wlan1`, etc.) and put it into monitor mode.
+
+```bash
+# Check for wireless interfaces
+iwconfig
+
+# Start monitor mode on the target interface (e.g., wlan0)
+sudo airmon-ng start wlan0
+```
+This will create a new monitor interface, usually named `wlan0mon`.
+
+### 2. Capture Packets
+
+Use `airodump-ng` to scan for networks and capture packets from a specific target.
+
+```bash
+# Scan for all nearby Wi-Fi networks
+sudo airodump-ng wlan0mon
+
+# Capture packets from a specific BSSID and channel, saving to a file
+sudo airodump-ng --bssid [Target BSSID] -c [Channel] -w [CaptureFile] wlan0mon
+```
+
+### 3. Deauthentication Attack (For WPA Handshake Capture)
+
+To capture a WPA/WPA2 handshake, you can force a client to disconnect and reconnect using a deauthentication attack.
+
+```bash
+# Send deauth packets to a specific client
+sudo aireplay-ng -0 5 -a [Target BSSID] -c [Client MAC] wlan0mon
+```
+**Warning:** Only perform this on networks you own or have explicit permission to test.
+
+### 4. Export to CSV
+
+The captured data can be exported to CSV for easier analysis. `airodump-ng` automatically creates a `.csv` file when using the `-w` flag.
+
+## CSV Fields Explanation
+
+The generated CSV file from `airodump-ng` contains the following key fields:
+
+*   **BSSID:** The MAC address of the Access Point.
+*   **First time seen:** The timestamp when the network was first detected.
+*   **Last time seen:** The timestamp when the network was last detected.
+*   **channel:** The channel the network is operating on.
+*   **Speed:** The maximum supported speed of the network.
+*   **Privacy:** The encryption method used (e.g., WPA2, WEP).
+*   **Cipher:** The specific cipher used for encryption.
+*   **Authentication:** The authentication method.
+*   **Power:** The signal strength.
+*   **# beacons:** The number of beacon frames received.
+*   **# IV:** The number of initialization vectors received.
+*   **LAN IP:** The IP address of the network.
+*   **ID-length:** The length of the ESSID.
+*   **ESSID:** The public name of the Wi-Fi network.
+*   **Key:** The captured WPA key (if successful).
