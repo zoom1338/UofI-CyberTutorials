@@ -7,4 +7,6 @@
 # 9/1/25
 * downloaded MobSF on Kali linux VM the MobSF github includes app files for APK and IPA for testing
 * started learning MOBSF and features for static analysis 
+* VM crashed after downloading MobSF making a new one
+* started drafting tutorial steps for static only
 
