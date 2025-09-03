@@ -10,3 +10,7 @@
 * VM crashed after downloading MobSF making a new one
 * started drafting tutorial steps for static only
 
+#9/2/25
+* got vm to work, 
+* used test files on MobSF able, documented steps taken to trouble shoot issues for tutorial draft
+* need to find more test files for tutorial challenges or use jsut APK and make challenges using IPA
