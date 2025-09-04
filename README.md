@@ -25,8 +25,8 @@ Tutorials are meant to be used a learning resource and used as such.
 ### Prerequisites
   * Virtual machines eg. VMWare, Oracle Virtual Box
     * Links for recomended OS:
-    https://www.kali.org/get-kali/#kali-platforms
-    https://ubuntu.com/download
+        * https://www.kali.org/get-kali/#kali-platforms
+        * https://ubuntu.com/download
 
 ### Add-ons
 Each tutorial will require different tools and links and installations guided are included the tutorials documents.
