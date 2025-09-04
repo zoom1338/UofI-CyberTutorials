@@ -8,50 +8,30 @@ If any of the sections in this template grows to more than one screen, consider 
 
 Provide a README file with the following information:
 
-# Project Name
+# University of Idaho Cyber Tutorials
 
 ## Project summary
+This is a collection of hands on tutorials on wireless or distributed system seciruty scenarios ofr the Universithy of Idaho's Cybersecurity Education Resouces (CERES) project.
 
-### One-sentence description of the project
+The project is to bridge the gap between the classroom and the required industry skill.
 
-TODO: A 20-second elevator pitch of your project - its core idea summarized in one sentence.
+These tutorials are to be reproducible and opensource for cyber security learners to preform. Learners will be able to received guided knowledge on the tutorial topic and exposure to new tools used in the cyber security industry.
 
-### Additional information about the project
-
-TODO: Write a compelling/creative/informative project description / summary
+## Disclaimer
+Tutorials are meant to be used a learning resource and used as such.
 
 ## Installation
 
 ### Prerequisites
-
-TODO: List what a user needs to have installed before running the installation instructions below (e.g., git, which versions of Ruby/Rails)
+  * Virtual machines eg. VMWare, Oracle Virtual Box
+    * Links for recomended OS:
+    https://www.kali.org/get-kali/#kali-platforms
+    https://ubuntu.com/download
 
 ### Add-ons
-
-TODO: List which add-ons are included in the project, and the purpose each add-on serves in your app.
-
-### Installation Steps
-
-TODO: Describe the installation process (making sure you mention `bundle install`).
-Instructions need to be such that a user can just copy/paste the commands to get things set up and running. 
-
-
-## Functionality
-
-TODO: Write usage instructions. Structuring it as a walkthrough can help structure this section,
-and showcase your features.
-
-
-## Known Problems
-
-TODO: Describe any known issues, bugs, odd behaviors or code smells. 
-Provide steps to reproduce the problem and/or name a file or a function where the problem lives.
-
+Each tutorial will require different tools and links and installations guided are included the tutorials documents.
 
 ## Contributing
-
-TODO: Leave the steps below if you want others to contribute to your project.
-
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
@@ -60,11 +40,6 @@ TODO: Leave the steps below if you want others to contribute to your project.
 
 ## Additional Documentation
 
-TODO: Provide links to additional documentation that may exist in the repo, e.g.,
   * Sprint reports
   * User links
 
-## License
-
-If you haven't already, add a file called `LICENSE.txt` with the text of the appropriate license.
-We recommend using the MIT license: <https://choosealicense.com/licenses/mit/>
