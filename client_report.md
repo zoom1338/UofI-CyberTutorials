@@ -1,6 +1,6 @@
 # Client Meetings Report
 
-## Agenda 8/21/2025
+# Agenda 8/21/2025
  * Communication and Repository
  * Team liason
  * Upcoming tasks and plan
@@ -27,8 +27,20 @@ goals for week: testing MobSF, Complete notes on MobSF, Frida and Burp Suite. Up
 # Agenda 9/2/2025
     * Updates from Previous week progress
     *
-# Minutes
+## Minutes
     Current progess was discusses, collboration with Cyber Security Club for hardware requirements
     * Dara's goal for week: draft tutorial, update word list, creat issues on github
     * Isabella's goals: finish static tutorial begin dynamic analysis
     * work on project report draft and sprint 1 deliverables
+
+# Agenda 9/9/2025
+    * Updates on progress
+    * Sprint 1 deliverables due this week 9/13/2025
+    *
+
+## Minutes
+    WSU CSG has provided us with club room access, and a wireless router for use on the project and willing to help further.
+    Demo video for sprint 1, if we have any thing to show for the tutorials
+    Upload project report (google doc), Fill out sprint report, Catme survey, weekly repo contributions.
+    Dara and Isabella worked on the Final report draft on several sections
+    Both making headway on the tutorials ie drafting and experimenting form the goals of the tutorial
