@@ -1,5 +1,22 @@
 # Client Meetings Report
 
+## Week 1: Kickoff Meeting
+* **Date:** 2025-09-02
+* **Attendees:** AJ, Darasimi, Isabella
+* **Agenda:** Project kickoff, introductions, and initial planning.
+* **Notes:** Discussed project goals, scope, and deliverables. Established communication channels and meeting cadence.
+* **Action Items:**
+    * Darasimi: Set up GitHub repository and invite team members.
+    * Isabella: Draft initial project timeline.
+
+## Wi-Fi Lab Setup Coordination
+* **Date:** 2025-09-05
+* **Attendees:** Sean Hodgson, CSG, Darasimi (via Email)
+* **Agenda:** Coordination for setting up the Wi-Fi lab environment.
+* **Notes:** Discussed hardware requirements, network configuration, and access protocols. CSG to provide necessary equipment.
+* **Action Items:**
+    * Darasimi: Follow up with CSG on equipment delivery status.
+
 ## Agenda 8/21/2025
  * Communication and Repository
  * Team liason

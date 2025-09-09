@@ -1,3 +1,42 @@
-# Sample PCAPs
+# Sample Packet Captures
 
-Drop your test `.pcap` or `.cap` files in this directory for analysis.
+This directory is for storing sample `.pcap` or `.pcapng` files for testing and demonstration purposes.
+
+## Saving Captures
+
+When adding new capture files, please use descriptive names that indicate the type of traffic captured. For example, `wpa2_handshake.pcapng` or `http_get_request.pcap`.
+
+## Capturing EAPOL Packets
+
+Here are some sample commands for capturing EAPOL (Extensible Authentication Protocol over LAN) packets, which are part of the WPA/WPA2 handshake.
+
+### airodump-ng
+
+`airodump-ng` is part of the aircrack-ng suite and is used for capturing 802.11 frames.
+
+**Command:**
+
+```bash
+# Replace wlan0mon with your wireless interface in monitor mode
+# Replace --bssid XX:XX:XX:XX:XX:XX with the BSSID of the target AP
+# Replace -c X with the channel of the target AP
+# Replace -w capture_file with the desired output file name
+airodump-ng --bssid XX:XX:XX:XX:XX:XX -c X -w capture_file wlan0mon
+```
+
+This command will save the capture to `capture_file-01.cap`. You can then filter for EAPOL packets in Wireshark.
+
+### tcpdump
+
+`tcpdump` is a powerful command-line packet analyzer.
+
+**Command:**
+
+```bash
+# Replace wlan0 with your wireless interface
+# Use 'ether proto 0x888e' to filter for EAPOL packets
+# Replace -w capture_file.pcap with the desired output file name
+sudo tcpdump -i wlan0 -w capture_file.pcap 'ether proto 0x888e'
+```
+
+This command captures only the EAPOL packets and saves them to `capture_file.pcap`.
