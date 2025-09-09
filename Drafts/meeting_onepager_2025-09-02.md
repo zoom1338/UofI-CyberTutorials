@@ -23,3 +23,8 @@
   - **Mitigation:** Proceed with writing non-practical sections of the tutorial that don't require lab work.
 - **Risk:** The chosen wordlist is not approved.
   - **Mitigation:** Use a smaller, commonly available wordlist for initial development and testing.
+
+## Notes during the meeting 
+- create a issues for my tasks on the github repo and then assign it to myself 
+- license ~ CC-BY-NC-ND
+

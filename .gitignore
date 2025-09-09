@@ -1,0 +1,7 @@
+.vscode/
+*.vbox
+*.vdi
+*.iso
+__pycache__/
+node_modules/
+.DS_Store

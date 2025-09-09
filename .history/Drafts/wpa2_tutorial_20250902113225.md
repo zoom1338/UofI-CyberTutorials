@@ -1,0 +1,101 @@
+# WPA2-PSK Handshake Capture & Cracking Tutorial
+
+## 1. Overview
+
+### WPA2 Background
+Wi-Fi Protected Access 2 (WPA2) is a security protocol and certification program developed by the Wi-Fi Alliance to secure wireless computer networks. It superseded the original WPA protocol and has been the standard for securing Wi-Fi networks for over a decade. WPA2-Personal, also known as WPA2-PSK (Pre-Shared Key), is the most common mode used in home and small office environments, where a single password is used by all clients to connect to the network.
+
+### The 4-Way Handshake Vulnerability
+The core of WPA2-PSK security lies in the 4-way handshake, a process that occurs when a client device (supplicant) connects to an access point (authenticator). During this handshake, the client and AP prove they know the Pre-Shared Key (PSK) without ever transmitting it directly. They exchange a series of messages to generate and install a unique Pairwise Transient Key (PTK) that will encrypt all subsequent traffic for that session.
+
+The vulnerability lies in the fact that this handshake can be captured by an attacker who is passively listening to the wireless traffic. If an attacker captures all four EAPOL (Extensible Authentication Protocol over LAN) messages of the handshake, they can mount an offline dictionary or brute-force attack against the captured data to discover the original PSK.
+
+## 2. Lab Setup
+
+This tutorial assumes you are using a Kali Linux virtual machine, which comes pre-installed with many of the necessary tools.
+
+**Required Software:**
+*   **VirtualBox** or **VMware**
+*   **Kali Linux VM Image**
+
+**Installation Commands (run in Kali terminal):**
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y aircrack-ng wireshark tshark hcxtools hashcat
+```
+
+-   `aircrack-ng`: A suite of tools for auditing wireless networks.
+-   `wireshark`: A graphical network protocol analyzer.
+-   `tshark`: The command-line version of Wireshark.
+-   `hcxtools`: A set of tools to convert and manipulate handshake captures for use with Hashcat.
+-   `hashcat`: An advanced password recovery utility.
+
+## 3. Using a Sample Capture
+
+For this initial phase, we will use a pre-existing capture file (`.cap` or `.pcapng`) containing a WPA2 handshake.
+
+1.  **Open in Wireshark**:
+    ```bash
+    wireshark sample.cap
+    ```
+2.  **Filter for EAPOL Messages**:
+    In the Wireshark display filter bar, type `eapol` and press Enter. This will isolate the handshake packets.
+3.  **Identify the Handshake**:
+    Look for a sequence of four packets, typically between the Access Point and a single Client device. Wireshark will often identify this sequence with the message "Message 1 of 4", "Message 2 of 4", etc., in the "Info" column.
+
+    > **[Screenshot Placeholder: Wireshark window showing the filtered 4-way handshake]**
+
+## 4. Cracking Workflow
+
+Once you have a capture file containing a handshake, you can attempt to crack the PSK.
+
+### Method A: `aircrack-ng`
+This is the most straightforward method. `aircrack-ng` can work directly with the `.cap` file and a wordlist.
+
+1.  **Run the command**:
+    ```bash
+    aircrack-ng -w /path/to/your/wordlist.txt -b <BSSID> sample.cap
+    ```
+    -   `-w`: Specifies the path to your wordlist file.
+    -   `-b`: Specifies the BSSID (MAC address) of the target Access Point.
+
+    `aircrack-ng` will indicate if a handshake is present in the file and begin testing passwords from the wordlist.
+
+### Method B: `hcxtools` and `hashcat`
+This method is more advanced and significantly faster, leveraging the power of a GPU for cracking. It requires converting the capture file into a format that `hashcat` can understand.
+
+1.  **Convert the capture file**:
+    Use `hcxpcapngtool` to extract the handshake and convert it to the `22000` hash format.
+    ```bash
+    hcxpcapngtool -o hash.22000 sample.cap
+    ```
+2.  **Run `hashcat`**:
+    ```bash
+    hashcat -m 22000 hash.22000 /path/to/your/wordlist.txt
+    ```
+    -   `-m 22000`: Specifies the hash type for WPA2-PSK.
+    -   The first argument is the converted hash file.
+    -   The second argument is the wordlist.
+
+## 5. Ethics and Scope
+
+**IMPORTANT**: This tutorial is for educational purposes only. You should **only** perform these techniques on networks that you own or have explicit, written permission to test. Unauthorized access to computer networks is illegal.
+
+For this guide, we are strictly working with a pre-recorded capture file. We are **not** engaging in live packet capture or de-authentication attacks until the required hardware is available and the ethical scope is fully understood.
+
+## 6. WPA3 Notes
+
+WPA3 is the successor to WPA2 and provides significant security improvements, primarily by replacing the PSK-based 4-way handshake with **Simultaneous Authentication of Equals (SAE)**.
+
+-   **SAE (Dragonfly Handshake)**: This method is resistant to offline dictionary attacks because the key exchange is interactive and does not expose enough information to allow an attacker to guess passwords offline, even if they capture the handshake.
+-   **Transition Mode**: Many modern routers operate in a "WPA2/WPA3" transition mode, which allows both WPA2 and WPA3 clients to connect. However, this mode is still vulnerable to the WPA2 handshake capture attack if a WPA2 client connects.
+-   **Further Reading**: For a deep dive into the vulnerabilities found in early WPA3 implementations, research the **Dragonblood** paper.
+
+## 7. Checklist for When Hardware Arrives
+
+-   [ ] Acquire a compatible wireless network adapter (e.g., Alfa AWUS036NHA).
+-   [ ] Verify adapter is recognized by Kali Linux (`iwconfig`).
+-   [ ] Practice putting the adapter into monitor mode (`airmon-ng start wlan0`).
+-   [ ] Practice using `airodump-ng` to scan for local networks.
+-   [ ] Develop a plan for capturing a handshake from an **authorized** test network.
+-   [ ] Review local laws and regulations regarding wireless network auditing.
