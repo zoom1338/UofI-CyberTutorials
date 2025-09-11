@@ -40,3 +40,16 @@ Deliverables for Sprint 1- CATME assignemts, Draft report, Checklist, Demo Video
 goals for week: continue documenting researching, learning tools ie aircrack, research questions
 * Isabella's Progress on Mobile App Security- 
 goals for week: testing MobSF, Complete notes on MobSF, Frida and Burp Suite. Update tutorial documentation. Define learing Objectives for Tutorial. Find App files for android and iOS.
+
+## Agenda & Minutes (Kickoff with AJ – Week 1)
+- Agenda: scope tutorials (WPA2/3, Mobile AppSec), repo setup, expectations.
+- Minutes: written tutorials first, reproducible labs; GitHub structure agreed; no video needed for Sprint 1.
+- Action Items: create research logs, start WPA2 scaffold, Mobile AppSec outline.
+
+## Dana 117 Wi-Fi Lab Setup (with CSG)
+- Notes: SSID Cybersecurity-Capstone_[2.4/5]GHz, pwd 3k0xmzxpmi; router 192.168.1.1; OK to switch security modes; caution about VLAN wide scans.
+- Action Items: first pcaps, equipment checkout, wordlist approval.
+
+## ESP32 Parts Coordination (IEEE + EECS)
+- Notes: ESP32 + components available in Dana 215 (IEEE); jumper wires/breadboards in EME 44 (Mike); pickup 9am.
+- Action Items: pick up parts; log BOM; add Marauder build plan.
