@@ -1,62 +1,58 @@
 # Sprint 1 Report (8/18/25 - 9/13/2025)
 
 ## What's New (User Facing)
- * Feature 1 or Bug Fix 1
- * Feature 2 or Bug Fix 2
- * Feature n or Bug Fix n
+* Repo structure + README “Repo Map”
+* Research logs (2025-08-30, 08-31, 09-01)
+* Wireshark Intro doc + 12 screenshots embedded
+* WPA2 tutorial scaffold (lab setup, sample capture, cracking paths)
+* Wi-Fi lab setup notes (Dana 117 router)
 
 ## Work Summary (Developer Facing)
-Provide a one paragraph synposis of what your team accomplished this sprint. Don't repeat the "What's New" list of features. Instead, help the instructor understand how you went about the work described there, any barriers you overcame, and any significant learnings for your team.
+* Set up Git branch WPA_2/3-v2; added notes, scaffolds, and experiments.
+* Coordinated with CSG for a dedicated AP; documented safe-testing cautions.
+* Built repeatable note workflow (daily logs) and experiment folders.
+* Aligned deliverables and schedule between teamates.
 
 ## Unfinished Work
-If applicable, explain the work you did not finish in this sprint. For issues/user stories in the current sprint that have not been closed, (a) any progress toward completion of the issues has been clearly tracked (by checking the checkboxes of  acceptance criteria), (b) a comment has been added to the issue to explain why the issue could not be completed (e.g., "we ran out of time" or "we did not anticipate it would be so much work"), and (c) the issue is added to a subsequent sprint, so that it can be addressed later.
+* Initial live WPA2 handshake capture pending (hardware pickup tomorrow).
+* Wordlist approval pending (small, ethical test lists).
+* Mobile AppSec Static analysis experiment draft (Isabella) in progress.
+
 
 ## Completed Issues/User Stories
-Here are links to the issues that we completed in this sprint:
-
- * URL of issue 1
- * URL of issue 2
- * URL of issue n
-
- Reminders (Remove this section when you save the file):
-  * Each issue should be assigned to a milestone
-  * Each completed issue should be assigned to a pull request
-  * Each completed pull request should include a link to a "Before and After" video
-  * All team members who contributed to the issue should be assigned to it on GitHub
-  * Each issue should be assigned story points using a label
-  * Story points contribution of each team member should be indicated in a comment
+All issues are still in progress.
  
  ## Incomplete Issues/User Stories
  Here are links to issues we worked on but did not complete in this sprint:
  
- * URL of issue 1 <<One sentence explanation of why issue was not completed>>
- * URL of issue 2 <<One sentence explanation of why issue was not completed>>
- * URL of issue n <<One sentence explanation of why issue was not completed>>
+* https://github.com/zoom1338/UofI-CyberTutorials/issues/5  - setup for testing Dynamic security analysis, andriod emulator doesn't work on VMs.
+* WPA2 live capture: waiting on NIC/ESP32; will execute in Sprint 2.
+* ESP32 Marauder build: parts pickup + assembly scheduled.
  
- Examples of explanations (Remove this section when you save the file):
-  * "We ran into a complication we did not anticipate (explain briefly)." 
-  * "We decided that the feature did not add sufficient value for us to work on it in this sprint (explain briefly)."
-  * "We could not reproduce the bug" (explain briefly).
-  * "We did not get to this issue because..." (explain briefly)
 
 ## Code Files for Review
 Please review the following code files, which were actively developed during this sprint, for quality:
- * [Name of code file 1](https://github.com/your_repo/file_extension)
- * [Name of code file 2](https://github.com/your_repo/file_extension)
- * [Name of code file 3](https://github.com/your_repo/file_extension)
+   * Drafts/wpa2_tutorial.md
+   * Experiments/wireshark_intro.md 
+   * Experiments/wifi_lab_setup.md
+   * 
+   * 
  
 ## Retrospective Summary
 Here's what went well:
-  * Item 1
-  * Item 2
-  * Item x
+  * Recived lab access
+  * clear repo cadance
+  * solid written scaffolds
  
 Here's what we'd like to improve:
-   * Item 1
-   * Item 2
-   * Item x
+   * Hardware corrdination
+   * screenshot handling
+   * updating project board and creating issues
   
 Here are changes we plan to implement in the next sprint:
-   * Item 1
-   * Item 2
-   * Item x
+   * finalize wordlists
+   * start live capture pipline
+   * complete Mobile AppSec draft
+   * begin research for next tutorials
+
+
