@@ -32,9 +32,9 @@ All issues are still in progress.
 
 ## Code Files for Review
 Please review the following code files, which were actively developed during this sprint, for quality:
-   * Drafts/wpa2_tutorial.md
-   * Experiments/wireshark_intro.md 
-   * Experiments/wifi_lab_setup.md
+   * Drafts/wpa2_tutorial.md ( https://github.com/zoom1338/UofI-CyberTutorials/blob/WPA_2/3-v2/Drafts/wpa2_tutorial.md )
+   * Experiments/wireshark_intro.md (https://github.com/zoom1338/UofI-CyberTutorials/blob/WPA_2/3-v2/Experiments/wireshark_intro.md )
+   * Experiments/wifi_lab_setup.md (https://github.com/zoom1338/UofI-CyberTutorials/blob/WPA_2/3-v2/Experiments/wifi_lab_setup.md )
    * 
    * 
  
