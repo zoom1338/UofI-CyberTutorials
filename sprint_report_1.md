@@ -6,9 +6,11 @@
 * Wireshark Intro doc + 12 screenshots embedded
 * WPA2 tutorial scaffold (lab setup, sample capture, cracking paths)
 * Wi-Fi lab setup notes (Dana 117 router)
+* Mobile App security Tools and resources collected
+* Notes and testing conducted on static analysis, test files used, and reports from MobSF
 
 ## Work Summary (Developer Facing)
-* Set up Git branch WPA_2/3-v2; added notes, scaffolds, and experiments.
+* Set up Git branches for each tutorial; added notes, scaffolds, and experiments.
 * Coordinated with CSG for a dedicated AP; documented safe-testing cautions.
 * Built repeatable note workflow (daily logs) and experiment folders.
 * Aligned deliverables and schedule between teamates.
@@ -16,18 +18,20 @@
 ## Unfinished Work
 * Initial live WPA2 handshake capture pending (hardware pickup tomorrow).
 * Wordlist approval pending (small, ethical test lists).
-* Mobile AppSec Static analysis experiment draft (Isabella) in progress.
+* Mobile AppSec Static analysis experiment draft in progress estacblished learning outcomes and challenges of tutorial.
+* Dynamic analysis set up and experiment draft
 
 
 ## Completed Issues/User Stories
-All issues are still in progress.
+
+ Standardized format of branches - https://github.com/zoom1338/UofI-CyberTutorials/issues/7
  
  ## Incomplete Issues/User Stories
  Here are links to issues we worked on but did not complete in this sprint:
  
 * https://github.com/zoom1338/UofI-CyberTutorials/issues/5  - setup for testing Dynamic security analysis, andriod emulator doesn't work on VMs.
-* WPA2 live capture: waiting on NIC/ESP32; will execute in Sprint 2.
-* ESP32 Marauder build: parts pickup + assembly scheduled.
+* https://github.com/zoom1338/UofI-CyberTutorials/issues/20 - WPA2 live capture: waiting on NIC/ESP32; will execute in Sprint 2.
+*https://github.com/zoom1338/UofI-CyberTutorials/issues/17 - ESP32 Marauder build: parts pickup + assembly scheduled.
  
 
 ## Code Files for Review
@@ -39,11 +43,13 @@ Please review the following code files, which were actively developed during thi
 
 ### MobileAppSecurity Branch
    * Experiments/Static.md (https://github.com/zoom1338/UofI-CyberTutorials/blob/MobileAppSec/MobileAppSecurity/Experiments/Static.md )
+   * Experiments/ APKReport.pdf (https://github.com/zoom1338/UofI-CyberTutorials/blob/MobileAppSec/MobileAppSecurity/Experiments/APKReport.pdf)
+   * Experiments/IPAReport.pdf ( https://github.com/zoom1338/UofI-CyberTutorials/blob/MobileAppSec/MobileAppSecurity/Experiments/IPAReport.pdf)
    
  
 ## Retrospective Summary
 Here's what went well:
-  * Recived lab access
+  * Recieved lab access
   * clear repo cadance
   * solid written scaffolds
  
