@@ -31,5 +31,8 @@
 
 # 9/14/25
 * Need to find alternatives for dynamic testing
-* downloading Andriod emulator on to main device and buro suitecommunity edition
-* look into frida for windows
+
+# 9/16/25
+* downloading Andriod studio on main laptop
+* getting burp suite community edition
+* need to look into frida for windows installation
