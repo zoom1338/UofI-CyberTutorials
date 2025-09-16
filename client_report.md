@@ -46,5 +46,10 @@ goals for week: testing MobSF, Complete notes on MobSF, Frida and Burp Suite. Up
  Both making headway on the tutorials ie drafting and experimenting form the goals of the tutorial
 
  # Agenda 9/16/2025
+ * Sprint 1 deliverables and feedback
+ * Sprint 2 due 10/11/2025
 
  # Minutes
+Feeback on sprint 1 deliverables, functional requiremtns needs attention and formatting
+continue making progress on tutorials
+
