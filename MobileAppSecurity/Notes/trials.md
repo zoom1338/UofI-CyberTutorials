@@ -20,3 +20,14 @@
 * tried installing andriod emulator from Genymotion, doesn't work on VMs
 * installed Frida on VM, need to find emulator for Frida
 * Need to parse the IPA and APK reports from MobSF static analysis for tutorial
+
+# 9/11/25
+* tested andrid vm none seem to be even booting genymotion wont boot and account set up was a hassle
+* getting andriond studio
+
+# 9/13/25
+* Still need to understand reports, since IPA doesnt have vulnerabilites use it for tutotrial and the APK for challenges
+* Reimaged old laptop to Kali Linux with everything meta package, but hardware doesn't seem beefy enough
+
+# 9/14/25
+* Need to find alternatives for dynamic testing
