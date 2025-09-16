@@ -31,3 +31,5 @@
 
 # 9/14/25
 * Need to find alternatives for dynamic testing
+* downloading Andriod emulator on to main device and buro suitecommunity edition
+* look into frida for windows
