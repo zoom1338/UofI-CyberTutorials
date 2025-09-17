@@ -36,4 +36,5 @@
 * downloading Andriod studio on main laptop
 * getting burp suite community edition
 * need to look into frida for windows installation
-* If issues still persist for Dynamic analysis on   my computer need to use CSG lab.
+* If issues still persist for Dynamic analysis on  my computer need to use CSG lab.
+* perfomred static on windows with docker
