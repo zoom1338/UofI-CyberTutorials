@@ -45,4 +45,8 @@
 * trying to set up communication between adnriod studio and Burp suite for traffic monitoring
 
 # 9/19/25
-* Burp suite set up is IP contingent so set up and experimetn completion need to be a single process
+* Burp suite set up is IP contingent so set up and experiment completion need to be a single process
+* Burp suite is becoming too mucha  hassle transtioned ot frida
+* Got frida server running on emulated device
+* debuging https://github.com/payatu/diva-android.git to work with andriod studio, outdated dependacies in code
+
