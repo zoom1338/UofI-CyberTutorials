@@ -38,3 +38,11 @@
 * need to look into frida for windows installation
 * If issues still persist for Dynamic analysis on  my computer need to use CSG lab.
 * perfomred static on windows with docker
+
+# 9/17/25
+* Blues stack doesn't work and is only for playing games on an andriod OS
+* Frida was installed on windows
+* trying to set up communication between adnriod studio and Burp suite for traffic monitoring
+
+# 9/19/25
+* Burp suite set up is IP contingent so set up and experimetn completion need to be a single process
