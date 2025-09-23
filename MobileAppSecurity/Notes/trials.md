@@ -50,3 +50,8 @@
 * Got frida server running on emulated device
 * debuging https://github.com/payatu/diva-android.git to work with andriod studio, outdated dependacies in code
 
+# 9/23/25
+* finished updateding files for gradle, pushing to emulated device
+* need to do: upload upadte zip file of application to repo and open issue for the app's origin with the updated code.
+* need to do: clean start to finish of dynamic analysis of emulator setup, frida installation and app installation and analysis.
+
