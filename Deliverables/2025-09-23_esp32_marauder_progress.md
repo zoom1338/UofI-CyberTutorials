@@ -4,7 +4,7 @@ All required parts for the ESP32 Marauder have been received.
 
 ## Parts Received
 
-![ESP32 Marauder Parts](/mnt/data/IMG_436B33B6-D0D3-481B-AEE5-AC75D2E9E832.jpeg)
+![ESP32 Marauder Parts](images/maurader_parts.jpg)
 
 | Part                 | Status        |
 | -------------------- | ------------- |
