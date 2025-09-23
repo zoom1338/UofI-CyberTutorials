@@ -53,3 +53,13 @@ goals for week: testing MobSF, Complete notes on MobSF, Frida and Burp Suite. Up
 Feeback on sprint 1 deliverables, functional requiremtns needs attention and formatting
 continue making progress on tutorials
 
+# Agenda 9/23/2025
+* Sprint 2 due 10/11/2025
+* Focus on tutorial development
+
+# Minutes
+Isabella- got Frida running on andriod studio and working on updating an APK App w/ vulnerbilites to running andriod studio. Continue wokring on dynamic and clean up steps taken for static an dynamic anylisis steps for testing and documents drafting phase.
+Dara- waiting for parts delivery, building Maurader. Continue building lab enviroment for tutorial
+
+
+
