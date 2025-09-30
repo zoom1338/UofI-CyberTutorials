@@ -53,7 +53,14 @@ run the server
 cmd used: 
 /data/local/tmp/frida-server &
 
+# running APP on emulated device
+
+
 # verfify Connection to PC
 In new terminal window on PC
 frida-ps -U
 * will list the processes running on the andriod device
+
+# Frida command exploration
+frida-trace
+
