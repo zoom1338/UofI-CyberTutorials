@@ -52,6 +52,15 @@
 
 # 9/23/25
 * finished updateding files for gradle, pushing to emulated device
-* need to do: upload upadte zip file of application to repo and open issue for the app's origin with the updated code.
+* need to do: upload update zip file of application to repo and open issue for the app's origin with the updated code.
 * need to do: clean start to finish of dynamic analysis of emulator setup, frida installation and app installation and analysis.
 
+# 9/29/25
+* cleaning up steps taken to setting up lab environment for dynamic testing
+* uploaded file for application
+
+# 9/30/25
+* Created issue with Android app repo for updating the code dependancies
+    https://github.com/payatu/diva-android/issues/17
+* need to do: clean up troubleshooting steps for dynamic analysis and create code injection files for tutorial
+* need to do: draft static and dynamic tutorials, tool backgrounds, installation guides, troubleshooting appendix, 

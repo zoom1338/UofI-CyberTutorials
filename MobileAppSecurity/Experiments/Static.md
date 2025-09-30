@@ -24,7 +24,7 @@ In terminal run:
 
 once downloaded and running open a browser
 on Linux OS: https://128.0.0.1:8000
-On windows OS: https://localhost:8000
+On Windows OS: https://localhost:8000
 
 * default login is mobsf/mobsf
 
