@@ -63,3 +63,12 @@ Dara- waiting for parts delivery, building Maurader. Continue building lab envir
 
 
 
+# Agenda 9/30/25
+* Sprint 2 10/11/2025
+* Tutorial development
+* 
+
+
+# Minutes
+Dara - creating expriments with maurader, breadboats. Continue set up of lab environment and meeting with AJ
+Isabella- create issues for subtasks for tutorial development, challenges and exercises on static and dynamic analysis for tutorials
