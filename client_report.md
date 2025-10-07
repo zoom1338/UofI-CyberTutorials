@@ -62,13 +62,21 @@ Isabella- got Frida running on andriod studio and working on updating an APK App
 Dara- waiting for parts delivery, building Maurader. Continue building lab enviroment for tutorial
 
 
-
 # Agenda 9/30/25
 * Sprint 2 10/11/2025
 * Tutorial development
 * 
 
-
 # Minutes
 Dara - creating expriments with maurader, breadboats. Continue set up of lab environment and meeting with AJ
 Isabella- create issues for subtasks for tutorial development, challenges and exercises on static and dynamic analysis for tutorials
+
+# Agenda 10/7/25
+* Sprint 2 10/11/2025
+* tutorial progress and goals
+
+# Minutes
+Isabella- Drafted static tutorial, drafted dynamic setup into draft tutorial, goal for week is record static tutorial demo video, complete setting dynamic tutorial challenges and activites, look to next topic
+Dara- wiring completed, continue building maurader,finalize wiring diagram for replication, functional testing
+Sprint deliverables - peer review on CATME, Draft report, Demo video, sprint 2 report, weekly repo contributions
+
