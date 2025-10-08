@@ -37,7 +37,7 @@ Here are links to the issues that we completed in this sprint:
 
 ## Code Files for Review
 Please review the following code files, which were actively developed during this sprint, for quality:
-
+ 
  * [Draft- Mobile App Security]( https://github.com/zoom1338/UofI-CyberTutorials/blob/MobileAppSec/MobileAppSecurity/Drafts/Draft-Mobile%20App%20Security.docx )
  * 
  
