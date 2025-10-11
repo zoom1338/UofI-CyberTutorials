@@ -42,3 +42,5 @@ Here are links to the issues that we completed in this sprint:
  
  * [ESP32_Marauder_Assembly_Tutorial] (https://github.com/zoom1338/UofI-CyberTutorials/blob/WPA_2/3-v2/Drafts/ESP32_Marauder_Assembly_Tutorial.md)
  
+## Demo Video
+Static analysis: https://youtu.be/hWvQwlzduD8
