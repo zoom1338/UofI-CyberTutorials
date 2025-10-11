@@ -1,22 +1,34 @@
-# UofI-CyberTutorials
+# ESP32 Marauder – Wireless Network Security Toolkit
 
-Cybersecurity tutorials for Wireless and Distributed Systems, developed as part of the CptS 432 Capstone project.
+This repository subdirectory documents the ESP32 Marauder, a portable Wi-Fi and Bluetooth auditing device, built during Sprint 2 of a cybersecurity capstone project. The purpose of the Marauder is to serve as an educational tool for network security testing in controlled environments. This work builds upon the WPA2/WPA3 handshake capture component of the larger project.
 
-## Project Summary
-This project contributes to the CERES initiative by producing reproducible tutorials for cybersecurity education. Our focus is on wireless penetration testing (WPA2/WPA3) and mobile application security testing. Tutorials are designed to be step-by-step, replicable, and usable in classroom or lab environments.
+This sprint’s goal was to assemble, solder, wire, and flash the device to achieve a successful first boot. This effort contributes to the overall project objective of creating a modular network security training toolkit.
 
-## Status (Sprint 1)
-- Logs added ([Sprint Report](SprintReports/sprint_1.md), [Client Report](client_report.md))
-- [Wireshark intro with screenshots](Experiments/wireshark_intro.md)
-- [WPA2 scaffold](Drafts/wpa2_tutorial.md)
-- Lab setup notes
-- Next sprint focus (live capture + ESP32)
+## Sprint 2 Highlights
+*   Completed full hardware assembly and soldering of header pins.
+*   Wired the TFT screen and ESP32 board according to a verified pin map.
+*   Installed the CP210x driver and successfully flashed the Marauder firmware.
+*   Booted the device and verified touchscreen response.
+*   Created a detailed step-by-step assembly tutorial with photos.
 
-## Repo Map
-- **Notes/** : daily research logs, meeting notes, raw thoughts  
-- **Drafts/** : early report/tutorial drafts  
-- **Experiments/** : lab setup notes, test configs, and scripts  
-- **FinalTutorial/** : polished tutorials ready for client delivery  
+## Quick Start (for replication)
+To reproduce this setup, follow these steps:
+1.  Navigate to the `ESP32_Marauder` directory or download this folder’s contents directly as a ZIP.
+2.  Follow the assembly tutorial to build the hardware.
+3.  Connect the ESP32 board to your computer via USB.
+4.  Flash the board with the Marauder firmware using `esptool`.
+5.  Test the device by powering it on and interacting with the interface.
 
-## License
-MIT License (see LICENSE.txt)
+## Deliverables
+*   [Assembly Tutorial](Drafts/ESP32_Marauder_Assembly_Tutorial.md)
+*   [Progress Update for AJ](deliverables/marauder_progress_update_for_AJ.md)
+*   [Wiring Reference](deliverables/images/wiring_cheat_sheet.png)
+
+## Next Steps (Sprint 3 Plan)
+*   Integrate a portable power supply (battery).
+*   Enable SD card logging and data storage.
+*   Test EAPOL capture and handshake replay functionality.
+
+***
+
+*Disclaimer: This tool is intended for educational purposes in controlled lab environments. Unauthorized scanning or interference with wireless networks is illegal and unethical. Use responsibly.*

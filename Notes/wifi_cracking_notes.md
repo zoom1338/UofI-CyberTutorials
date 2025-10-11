@@ -1,0 +1,160 @@
+# WiFi Cracking Lab Manual
+
+This document provides concise guides for reproducing several WiFi security tutorials. It is intended for educational purposes and should only be used on networks you are authorized to test.
+
+## 1. Building an ESP32 Marauder
+
+A portable WiFi penetration testing tool for capturing handshakes and performing various network attacks.
+
+- **Reference:** [Building ESP32 Marauder](https://www.youtube.com/watch?v=lcokJQMivwY)
+
+### Hardware Needed
+- ESP32 dev kit (ESP32 Wroom 32 recommended)
+- 2.8-inch TFT touchscreen display with an integrated SD card reader
+- Two miniature breadboards
+- Female Dupont header pins (a row of 14 and a row of 4)
+- Pre-cut jumper wires
+- USB micro cable
+- Power bank (optional, for portability)
+
+### Setup and Flashing
+The firmware must be flashed to the ESP32 *before* assembling the hardware.
+
+1.  **Download Firmware:** Navigate to the ESP32 Marauder GitHub repository and find the latest release. You will need four files: the bootloader, partitions, boot app, and the `_oldhardware.bin` firmware file.
+2.  **Use Web Flasher:** Use the `spaceon web updator` linked in the repository to flash the files.
+3.  **Connect ESP32:** Connect the ESP32 to your computer. Select the correct serial port in the web flasher (e.g., `cp2102 USB to UART Bridge`). If it doesn't connect, you may need to install the appropriate drivers.
+4.  **Upload Files:** Add each of the four downloaded files to the flasher at their specified memory addresses.
+5.  **Program:** Click "Program" and wait for the process to complete. Once finished, you can disconnect the ESP32.
+
+### Assembly
+1.  **Consult Wiring Diagram:** Refer to the wiring table and pinout diagrams linked in the ESP32 Marauder GitHub repository's "old read me" file.
+2.  **Mount Components:** Place the ESP32 and the female header pins for the display onto the breadboards.
+3.  **Connect Wires:** Use jumper wires to connect the pins from the ESP32 to the corresponding pins for the display and SD card reader, following the wiring diagram precisely.
+4.  **Attach Display:** Once all wires are connected, carefully plug the touchscreen display onto the header pins.
+5.  **Power On:** Connect the ESP32 to a power source (USB cable or power bank) to boot the Marauder firmware.
+
+### Key Steps & Expected Outputs
+The device is operated via its touchscreen interface.
+- **Scan for Networks:** Navigate to `Wi-Fi` > `Sniffers` > `Scan APs` to discover nearby networks.
+- **Deauth Attack:** Kicks all devices off a target network.
+- **Evil Portal Attack:** Creates a fake "Free WiFi" network. When a user connects and enters credentials into the captive portal, the credentials are saved to a log file on the SD card.
+
+### Safety and Ethics
+- **Authorized Use Only:** Deauthentication attacks are a form of denial-of-service and are illegal without explicit permission from the network owner.
+- **Privacy:** Capturing credentials via an Evil Portal should only be done in a controlled lab environment for educational purposes.
+
+### Reproduction Checklist
+- [ ] Gather all required hardware components.
+- [ ] Flash the ESP32 Marauder firmware using the web updater.
+- [ ] Assemble the ESP32, screen, and breadboards according to the wiring diagram.
+- [ ] Double-check all jumper wire connections for accuracy.
+- [ ] Power on the device to confirm the Marauder firmware boots successfully.
+- [ ] (Optional) Test functionality by scanning for networks.
+
+## 2. Handshake Capture and Cracking with Hashcat
+
+This tutorial demonstrates how to capture a WPA2 four-way handshake using the ESP32 Marauder and crack it offline with Hashcat to recover the WiFi password.
+
+- **Reference:** [Using ESP32 Marauder to capture handshakes](https://www.youtube.com/watch?v=FVvhJxAC-Ic)
+
+### Hardware Needed
+- A fully assembled and functional ESP32 Marauder
+- A computer with Hashcat installed
+
+### Setup
+1.  **Enable Deauthentication:** On the ESP32 Marauder, navigate to `Settings` and enable the `Force PMKID` option. This allows the Marauder to actively deauthenticate devices to force a reconnect, which is necessary to capture the handshake.
+2.  **Prepare Wordlist:** On your computer, create a wordlist file (e.g., `wordlist.txt`). This file should contain potential passwords. For better results, use a targeted wordlist based on any known information about the password.
+
+### Key Steps and Commands
+1.  **Scan for Target Network:**
+    - On the Marauder, go to `Wi-Fi` > `Sniffers` > `Scan APs` to identify the target network and ensure it's in range.
+2.  **Capture the Handshake:**
+    - Go to `Wi-Fi` > `EAP/PMKID Scan`.
+    - The Marauder will begin sending deauthentication packets and wait for a device to reconnect.
+    - A blue line on the screen indicates EAPOL (Extensible Authentication Protocol over LAN) packets. A spike in this graph signifies a successful handshake capture.
+3.  **Retrieve the Capture File:**
+    - Power off the Marauder and remove the SD card.
+    - Insert the SD card into your computer and locate the `EAP_0.pcap` file. This file contains the captured handshake.
+4.  **Convert PCAP for Hashcat:**
+    - Use an online tool like `cap2hashcat` (available at hashcat.net) to convert the `.pcap` file.
+    - Upload `EAP_0.pcap`, click "Convert," and download the resulting `.hc22000` file.
+5.  **Run Hashcat:**
+    - Open a terminal and navigate to your Hashcat directory.
+    - Use the following command to start the cracking process:
+      ```
+      hashcat.exe -m 22000 <hash_file.hc22000> <wordlist.txt> -r <rule_file.rule>
+      ```
+    - **`-m 22000`**: Specifies the hash type for WPA-PBKDF2-PMKID+EAPOL (WPA2).
+    - **`<hash_file.hc22000>`**: The converted handshake file.
+    - **`<wordlist.txt>`**: Your list of potential passwords.
+    - **`-r <rule_file.rule>`**: (Optional) Apply rules to your wordlist to generate more combinations (e.g., `OneRuleToRuleThemAll.rule`).
+
+### Expected Outputs
+- The Marauder's screen will confirm when the handshake has been captured.
+- Hashcat will display the cracked password in the terminal if it is found in the wordlist (or generated by the rules).
+
+### Safety and Ethics
+- **Permission is Required:** Deauthenticating devices from a network is illegal and disruptive. Only perform this attack on networks for which you have explicit, written permission.
+- **Legal Constraints:** Be aware of local and national laws regarding network security testing. Unauthorized access or disruption of networks can have severe legal consequences.
+
+### Reproduction Checklist
+- [ ] Configure the ESP32 Marauder by enabling `Force PMKID`.
+- [ ] Use the Marauder to scan for and target an authorized WiFi network.
+- [ ] Run the `EAP/PMKID Scan` to capture the four-way handshake.
+- [ ] Transfer the `.pcap` file from the SD card to your computer.
+- [ ] Convert the `.pcap` file to the `.hc22000` format.
+- [ ] Create a targeted wordlist for the cracking attempt.
+- [ ] Run Hashcat with the correct mode and files.
+- [ ] Verify if the password was successfully recovered.
+
+## 3. KRACK Attack (Key Reinstallation Attack)
+
+A man-in-the-middle (MITM) attack that exploits a vulnerability in the WPA2 protocol by forcing nonce reuse. This allows an attacker to decrypt traffic from a targeted device. This demonstration specifically targets Android and Linux devices, which are vulnerable to having their encryption key reset to an all-zero key.
+
+- **Reference:** [KRACK Attacks: Forcing Nonce Reuse in WPA2](https://www.youtube.com/watch?v=Oh4WURZoR98)
+
+### Tools Needed
+- A computer with a wireless card capable of monitor mode and packet injection.
+- `sslstrip`: A tool to bypass HTTPS on improperly configured websites.
+- `Wireshark`: A network protocol analyzer to view captured traffic.
+- A custom script to perform the key reinstallation attack (as demonstrated in the video).
+
+### Setup
+1.  **Identify Target Network:** The attacker must be within range of the target WiFi network and the victim device.
+2.  **Clone the Network:** The attack script first searches for the target network and then creates a malicious clone of it on a different channel. This clone acts as the man-in-the-middle.
+3.  **Route Traffic:** The attacker's machine is configured to route the victim's traffic to the internet through the malicious network.
+
+### Key Steps and Commands
+1.  **Start the Attack Script:**
+    - The attacker runs a script that specifies the target network and victim device.
+    - The script clones the network and waits for the victim to connect.
+2.  **Force Victim to Connect to Malicious Clone:**
+    - The script sends special WiFi frames that command the victim device (e.g., an Android phone) to switch to the channel of the cloned network.
+    - This tricks the device into connecting to the attacker's machine instead of the legitimate access point.
+3.  **Execute the Key Reinstallation Attack:**
+    - Once the man-in-the-middle position is established, the script manipulates the WPA2 four-way handshake messages.
+    - It forces the victim device to reinstall an all-zero encryption key, effectively nullifying WPA2 encryption for that client.
+4.  **Intercept and Decrypt Traffic:**
+    - The attacker uses Wireshark to capture all traffic from the victim device. Because the encryption key is known (all zeros), the traffic is readable.
+5.  **Bypass HTTPS (Optional):**
+    - The `sslstrip` tool is used to downgrade HTTPS connections to HTTP on websites that are not properly configured (i.e., lack HSTS).
+    - This allows the attacker to capture sensitive data, such as login credentials, in plain text.
+
+### Expected Outputs
+- The attack script will confirm that it has cloned the network and established a man-in-the-middle position.
+- Wireshark will show decrypted traffic from the victim device, which would normally be encrypted by WPA2.
+- If `sslstrip` is successful, the victim's browser will not show the green HTTPS lock, and any submitted credentials will be visible in the captured traffic.
+
+### Safety and Ethics
+- **Highly Illegal:** This is a sophisticated man-in-the-middle attack that involves intercepting and decrypting private communications. Performing this attack on any network or device without explicit authorization is illegal and a severe violation of privacy.
+- **Educational Use Only:** This tutorial should only be reproduced in a controlled lab environment with devices you own and a network you have set up for security testing.
+- **Mitigation:** The primary defense against KRACK attacks is to ensure all WiFi-enabled devices (including routers, laptops, and smartphones) are updated with the latest security patches.
+
+### Reproduction Checklist
+- [ ] Set up a lab environment with a dedicated access point and a victim device (e.g., an older Android phone).
+- [ ] Configure a Linux machine with a compatible wireless card and install the necessary tools (`sslstrip`, `Wireshark`, etc.).
+- [ ] Run the attack script to clone the target network.
+- [ ] Trick the victim device into connecting to your malicious clone.
+- [ ] Execute the key reinstallation attack against the victim.
+- [ ] Use Wireshark to monitor and confirm that you can read the decrypted traffic.
+- [ ] (Optional) Attempt to capture credentials from an insecure (HTTP) login page.
