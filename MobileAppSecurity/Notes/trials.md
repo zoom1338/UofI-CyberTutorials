@@ -64,3 +64,10 @@
     https://github.com/payatu/diva-android/issues/17
 * need to do: clean up troubleshooting steps for dynamic analysis and create code injection files for tutorial
 * need to do: draft static and dynamic tutorials, tool backgrounds, installation guides, troubleshooting appendix, 
+
+# 10/13/25
+* diva-andriod app wont stay open on emulated devicee long enough to produce a PID, need to find new app that can be used
+* API-Demos is just a basic application with no features and barley even created long stays open and frida can be used for firda-discover and frida-trace commands. 
+* researching other apps, most apps created as vulnerable and open-source are extremly outdated or require access to the servers that arne't managed anymore.
+* Allsecure is still managed but is an application of tutorials: https://github.com/t0thkr1s/allsafe-android, but cant get basic frida server connection established, can get the pids but cant trace functions
+
