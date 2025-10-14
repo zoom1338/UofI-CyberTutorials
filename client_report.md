@@ -80,3 +80,11 @@ Isabella- Drafted static tutorial, drafted dynamic setup into draft tutorial, go
 Dara- wiring completed, continue building maurader,finalize wiring diagram for replication, functional testing
 Sprint deliverables - peer review on CATME, Draft report, Demo video, sprint 2 report, weekly repo contributions
 
+# 10/14/2025
+* Tutorial progress
+* Sprint 2 deliverables and feedback
+* Sprint 3 due 11/08/2025
+
+# Minutes
+* Dara follow the plan included in the WPA2/3 branch layed out
+* Isabella- 1. find a new application for the Dynamic testing, 2. get on of the older existing applications to work , 3. last rework the AllSafe   application
