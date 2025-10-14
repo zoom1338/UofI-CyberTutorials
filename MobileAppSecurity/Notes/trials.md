@@ -67,7 +67,7 @@
 
 # 10/13/25
 * diva-andriod app wont stay open on emulated devicee long enough to produce a PID, need to find new app that can be used
-* API-Demos is just a basic application with no features and barley even created long stays open and frida can be used for firda-discover and frida-trace commands. 
+* API-Demos is just a basic application with no features and barley even created long stays open and frida can be used for firda-discover and frida-trace commands. https://github.com/appium/android-apidemos/releases
 * researching other apps, most apps created as vulnerable and open-source are extremly outdated or require access to the servers that arne't managed anymore.
 * Allsecure is still managed but is an application of tutorials: https://github.com/t0thkr1s/allsafe-android, but cant get basic frida server connection established, can get the pids but cant trace functions
 
