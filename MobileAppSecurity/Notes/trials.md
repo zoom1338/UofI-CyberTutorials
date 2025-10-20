@@ -71,3 +71,6 @@
 * researching other apps, most apps created as vulnerable and open-source are extremly outdated or require access to the servers that arne't managed anymore.
 * Allsecure is still managed but is an application of tutorials: https://github.com/t0thkr1s/allsafe-android, but cant get basic frida server connection established, can get the pids but cant trace functions
 
+# 10/17/25
+* https://mas.owasp.org/crackmes/Android is being tested on, set up for mutilpe different way to crack and will focus ona frida solution
+* 
