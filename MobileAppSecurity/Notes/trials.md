@@ -74,3 +74,11 @@
 # 10/17/25
 * https://mas.owasp.org/crackmes/Android is being tested on, set up for mutilpe different way to crack and will focus ona frida solution
 * 
+
+# 10/22/25
+* completed analysis on uncrackable1
+* activity and challegens put into the draft
+
+# 10/27/25
+* uncrackable 2 and 3 both have root detection on the applicatiob ,but frida server wont work unless device is rooted
+* need work arounds
