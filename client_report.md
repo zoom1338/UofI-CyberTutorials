@@ -88,3 +88,22 @@ Sprint deliverables - peer review on CATME, Draft report, Demo video, sprint 2 r
 # Minutes
 * Dara follow the plan included in the WPA2/3 branch layed out
 * Isabella- 1. find a new application for the Dynamic testing, 2. get on of the older existing applications to work , 3. last rework the AllSafe   application
+
+# 10/21/2025
+* Poster assignment due 10/24/2025
+
+
+# Minutes
+* Poster assignment needed: Team Name, Poster abstract(150-250 words),Poster title , team members. Needs to be engaging
+* Isabella has been test OWASP crackmes for the tutorial. Will continue to
+* Dara continue troubleshooting the marauder
+
+# 10/28/2025
+* Sprint 3 due 11/8/2025
+* 
+
+# Minutes
+* Poster assignmetn deliverables where satisfactory
+* Dara was able to find work arounds for mauarder   vscode workarounds for tutorial. Aquired the cyber security clubs AP, needs an SD
+* Isabella was able to draft dynamic tutorial with java scrpits for users to conduct the analysis. 
+
