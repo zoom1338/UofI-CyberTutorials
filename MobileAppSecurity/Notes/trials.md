@@ -82,3 +82,7 @@
 # 10/27/25
 * uncrackable 2 and 3 both have root detection on the applicatiob ,but frida server wont work unless device is rooted
 * need work arounds
+
+# 10/30/25
+* Jadx analysis for uncrackable 2 
+* informal testing on tutorial 1 by coworker waiting feedback
