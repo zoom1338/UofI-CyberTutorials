@@ -19,6 +19,14 @@ Tutorials are meant to be used a learning resource and used as such.
 ### Add-ons
 Each tutorial will require different tools, links and installations guides are included in the tutorials documents.
 
+## Demo Videos
+
+### Mobile App Security 
+* Static Analysis using MobSF: https://youtu.be/hWvQwlzduD8
+* Dynamic Analysis Intro using Frida:
+* Application Analysis using Jadx:
+* Application Anlysis usinf Radare2: 
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -30,4 +38,6 @@ Each tutorial will require different tools, links and installations guides are i
 
   * Sprint reports
   * User links
+
+
 
