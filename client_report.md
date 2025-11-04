@@ -107,3 +107,16 @@ Sprint deliverables - peer review on CATME, Draft report, Demo video, sprint 2 r
 * Dara was able to find work arounds for mauarder   vscode workarounds for tutorial. Aquired the cyber security clubs AP, needs an SD
 * Isabella was able to draft dynamic tutorial with java scrpits for users to conduct the analysis. 
 
+# 11/4/2025
+* Sprint 3 due 11/4/25
+* plans for week
+* plans for sprint 4
+
+# Minutes
+* Sprint 3 demo video, sprint 3 report, draft fianl report, peer assessment, ready to go links for tutorial sharing and testing
+* Isabella will work on demo video for uncrackable 1, testing feedback for mobSec tutorial 1, finish uncrackable 2 and uncrackable 3 drafting tutorial and demo videos once completed
+* Dara will conitnue working on the, getting the
+* Sprint 4 user testing for first 2 weeks,
+* last two weeks and thanksgiving work on : Poster, poster submission due to 12/1, Poster Pitch maybe play demo videos, 
+* Poster Presentation on 12/4, graded assignment and competition
+* last week, final product demo, final report
