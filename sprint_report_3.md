@@ -16,8 +16,8 @@ If applicable, explain the work you did not finish in this sprint. For issues/us
 ## Completed Issues/User Stories
 Here are links to the issues that we completed in this sprint:
 
- * URL of issue 1
- * URL of issue 2
+ * https://github.com/zoom1338/UofI-CyberTutorials/issues/28
+ * https://github.com/zoom1338/UofI-CyberTutorials/issues/27
  * URL of issue n
 
  Reminders (Remove this section when you save the file):
@@ -47,18 +47,5 @@ Please review the following code files, which were actively developed during thi
  * [Name of code file 2](https://github.com/your_repo/file_extension)
  * [Name of code file 3](https://github.com/your_repo/file_extension)
  
-## Retrospective Summary
-Here's what went well:
-  * Item 1
-  * Item 2
-  * Item x
- 
-Here's what we'd like to improve:
-   * Item 1
-   * Item 2
-   * Item x
-  
-Here are changes we plan to implement in the next sprint:
-   * Item 1
-   * Item 2
-   * Item x
+## Demo Video
+Dynamic analysis using Frida: https://youtu.be/df1ZA2breQ8

@@ -23,7 +23,7 @@ Each tutorial will require different tools, links and installations guides are i
 
 ### Mobile App Security 
 * Static Analysis using MobSF: https://youtu.be/hWvQwlzduD8
-* Dynamic Analysis Intro using Frida:
+* Dynamic Analysis Intro using Frida: https://youtu.be/df1ZA2breQ8
 * Application Analysis using Jadx:
 * Application Anlysis usinf Radare2: 
 
