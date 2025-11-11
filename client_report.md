@@ -120,3 +120,14 @@ Sprint deliverables - peer review on CATME, Draft report, Demo video, sprint 2 r
 * last two weeks and thanksgiving work on : Poster, poster submission due to 12/1, Poster Pitch maybe play demo videos, 
 * Poster Presentation on 12/4, graded assignment and competition
 * last week, final product demo, final report
+
+# 11/11/2025
+* Sprint 3 recap
+* plans for week
+* plans for Sprint 4
+
+# Minutes
+* ran into a souldering issue for marauder, SD card components were affixed properly and needed for storing network traffic.
+* Dara will work on getting the hardware issues fixed.
+* Isabella- waiting on testing to come back, and work the documentation side of the project.
+* next week meeting will be fouced on poster assignment
