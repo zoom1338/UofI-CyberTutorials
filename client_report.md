@@ -143,9 +143,9 @@ Sprint deliverables - peer review on CATME, Draft report, Demo video, sprint 2 r
 # Minutes
 * Isabella waiting on test results to come back, Cleaning up reverse engineering tutorial, and editing fianl report
 * Dara- worked with Michael(IEEE) on marauder USB, currently working on WIFI cracking on WSU CSG Router WPA2/3.
-* Poster assignment- 
+* Poster assignment- template available
     1st column- "what were able to complete, project synopsis overall despcription, 
-    2nd column - objectives,challenges, technologies used
+    2nd column - objectives,challenges, technologies used 
     3rd- future work conclusions, things left to do unfinished
 * Poster presentation - oral presentation for judging, introduction and elevator pitch
 
