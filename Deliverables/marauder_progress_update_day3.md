@@ -1,7 +1,7 @@
 # Project Progress Update: Day 3 — ESP32 Marauder
 
 **Date:** October 29, 2025
-**Author:** [Your Name]
+**Author:** Darasimi Ogunbinu-Peters
 **Status:** **Blocked** — Awaiting correct hardware (microSD card).
 
 ---
@@ -18,6 +18,7 @@ Unfortunately, the provided card was a full-size SanDisk SDHC card inside an ada
 
 For visual reference, the images below document the incorrect card type and the error message.
 
+![sd card error](image.png)
 *![Incorrect SD Card](images/Micro%20usb%20failure/image_1.jpg)*
 *![SD Card Error](images/Micro%20usb%20failure/image_2.JPG)*
 
