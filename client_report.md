@@ -131,3 +131,24 @@ Sprint deliverables - peer review on CATME, Draft report, Demo video, sprint 2 r
 * Dara will work on getting the hardware issues fixed.
 * Isabella- waiting on testing to come back, and work the documentation side of the project.
 * next week meeting will be fouced on poster assignment
+
+# 11/18/2025
+* Plans for next 2 weeks
+* Poster assignment- Due Dec. 1st
+* Client Demo
+* Poster presentation
+* Poster Session on Dec. 4th
+* Sprint 4 due Dec. 6th
+
+# Minutes
+* Isabella waiting on test results to come back, Cleaning up reverse engineering tutorial, and editing fianl report
+* Dara- worked with Michael(IEEE) on marauder USB, currently working on WIFI cracking on WSU CSG Router WPA2/3.
+* Poster assignment- 
+    1st column- "what were able to complete, project synopsis overall despcription, 
+    2nd column - objectives,challenges, technologies used
+    3rd- future work conclusions, things left to do unfinished
+* Poster presentation - oral presentation for judging, introduction and elevator pitch
+
+* Client Demo Video- the video can be for sprint 4 demo video, and for poster presentation
+    Professional video, edit out lag, 
+    talk about project goals and objectives, challenges we ran into, what is unfinished and demo what we accomplished and how we will go through the tutorials.
