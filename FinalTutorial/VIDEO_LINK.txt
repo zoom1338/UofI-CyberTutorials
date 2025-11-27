@@ -1,0 +1,6 @@
+ESP32 Marauder WPA2 Tutorial - Final Recording
+
+The final demo video for this tutorial is hosted on YouTube (unlisted) due to GitHub's 100 MB file size limit.
+
+YouTube link:
+https://youtu.be/2y4-D3z_nvg
