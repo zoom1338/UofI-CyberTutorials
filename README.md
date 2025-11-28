@@ -21,11 +21,13 @@ Each tutorial will require different tools, links and installations guides are i
 
 ## Demo Videos
 
+### WPA2/3 crack using ESP32 Marauder
+* https://youtu.be/2y4-D3z_nvg
+
 ### Mobile App Security 
 * Static Analysis using MobSF: https://youtu.be/hWvQwlzduD8
 * Dynamic Analysis Intro using Frida: https://youtu.be/df1ZA2breQ8
-* Application Analysis using Jadx:
-* Application Anlysis usinf Radare2: 
+* Reverse Engineering Applications with JADX adn Radare2: 
 
 ## Contributing
 1. Fork it!
