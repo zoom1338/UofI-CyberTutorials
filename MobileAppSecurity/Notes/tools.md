@@ -11,6 +11,8 @@
 ### Frida
 #### Sources:
  * Repo- https://github.com/frida/frida
+ * frida releases for server: https://github.com/frida/frida/releases
+ * node.js: https://nodejs.org/en/download
 
 ## Burp Suite-
 
