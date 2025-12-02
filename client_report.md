@@ -152,3 +152,13 @@ Sprint deliverables - peer review on CATME, Draft report, Demo video, sprint 2 r
 * Client Demo Video- the video can be for sprint 4 demo video, and for poster presentation
     Professional video, edit out lag, 
     talk about project goals and objectives, challenges we ran into, what is unfinished and demo what we accomplished and how we will go through the tutorials.
+
+# 12/2/25
+* Final Meeting
+* Client Demo video
+* Sprint 4 Deliverables due
+
+# Minutes
+* Client demo : overview of the tutorials and walk through the activites small slide deck
+* Poster demo session on Dec 4th, time stamps
+* Sprint 4 deliverables- same as the previous 3 sprints
