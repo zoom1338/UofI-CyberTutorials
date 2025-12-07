@@ -1,1 +1,0 @@
-	Isabella Sunderman is a cybersecurity student interested in machine learning, network architecture, and system administration. Isabella’s skills include C/C++, Python, and I'm not sure tbh. For the project, Isabella was responsible for the Mobile Application Security Tutorial.
